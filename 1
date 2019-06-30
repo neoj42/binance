@@ -1,0 +1,4 @@
+symbols_to_ignore = get_active_orders_symbols()  
+print(get_active_orders_symbols) 
+pairs_to_search = [s for s in BINANCE_SYMBOLS_TOO_LOOK if s not in symbols_to_ignore     ]   
+print("Pairs to search: {}".format(", ".join(pairs_to_search)))  
